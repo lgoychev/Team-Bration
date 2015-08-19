@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Invoice>
-	<InvoiceNumber>INV001</InvoiceNumber>
-	<Date>2015/08/08</Date>
-	<PONumber>123456-CT123</PONumber>
-	<TotalNet>100.00</TotalNet>
-	<TotalVAT>20.00</TotalVAT>
-	<TotalGross>120.00</TotalGross>
-</Invoice>
