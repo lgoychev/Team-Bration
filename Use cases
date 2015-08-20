@@ -1,0 +1,223 @@
+Functional Requirements
+
+Functional requirements capture the intended behavior of the system. This behavior may be expressed as services, tasks or functions the system is required to perform 
+
+We describe the functional requirements by giving various use cases. 
+
+1. Use case related to login the system
+
+
+ID: NOM1
+
+Title: Register as a user
+
+Primary Actor: User
+
+Precondition: User is accessing the system
+
+Main scenario:
+
+1. Press the Sign up button
+
+2. Enter a user name
+
+3. Enter a password
+
+4. Press the Register button
+
+Result. The usser has access to the system and is able to create files
+
+Alternative Scenario: The user choose already registered user name
+
+Result: The system displays an error message
+
+
+ID: NOM2
+
+Title: Register as a user
+
+Primary Actor: User
+
+Precondition: User is accessing the system
+
+Main scenario:
+
+1. Press the Sign up button
+
+2. Enter a user name
+
+3. Enter a password
+
+4. Press the Register button
+
+Result. The usser has access to the system and is able to create files
+
+Alternative Scenario: The user entered not allowed symbols in the user name or password
+
+Result: The system displays an error message 
+
+2. Use cases related to creating new file 
+
+ID: NOM3
+
+Title: Creating a new file
+
+Primary Actor: User
+
+Pre Condition: User is in its own account
+
+Main Scenario: 
+
+1. Press the New file button.
+
+2. User choose the name of the file 
+
+3. Standard Blank file is displayed
+
+4. Press OK 
+
+Result: The created new file is displayed on the screen
+
+Alternative Scenario:
+
+1a) Choose to create a new file, but the account has reached the limit of storage  space on the system
+3a) The name of the file contains not allowed symbols
+
+
+Result: Prompt message displayed that creating a new file is unavailable
+
+
+3. Use cases related to select an input file
+
+ID: NOM4
+
+Title: Select an input file
+
+Primary Actor: User
+
+Pre Condition: Application is start and prompt window to choose file is released
+
+Main Scenario:
+
+1. Press the Browse button.
+
+2. Standard Open screen is displayed.
+
+3. User choose the input file with is in .xml format 
+
+4. Press OK 
+
+Result: The name and location path is displayed in input file field on Choose file 
+
+application screen.
+
+Alternative Scenario:
+
+3a) Choose the input file which is not .xml file 
+
+3a) 1. Press OK
+
+Result: Prompt message displayed that file format is invalid.
+
+
+
+ID: NOM5
+
+Title: Select a correct input file
+
+Primary Actor: User
+
+Pre Condition: Application is start and prompt window to choose file is released
+
+Main Scenario:
+
+1. Press the Browse button.
+
+2. Standard Open screen is displayed.
+
+3. User choose the input file with correct .xml structure 
+
+4. Press Submit button 
+
+Result: The process is complete successfully the Prompt message appeared and display 
+
+“The XML file is successfully enriched.”
+
+
+
+ID: NOM6 
+
+Title: Select an incorrect input file
+
+Primary Actor: User
+
+Pre Condition: Application is start and prompt window to choose file is released
+
+Main Scenario:
+
+1. Press the Browse button.
+
+2. Standard Open screen is displayed.
+
+3. User choose the input file which PONumber tag is missing; 
+
+4. Press Submit button 
+
+Result: The process is complete and Prompt message appeared with Error message 
+
+“PONumber tag is empty or not exist”
+
+
+ID: NOM7
+
+Title: Select an incorrect input file
+
+Primary Actor: User
+
+Pre Condition: Application is start and prompt window to choose file is released
+
+Main Scenario:
+
+1. Press the Browse button.
+
+2. Standard Open screen is displayed.
+
+3. User choose the input file which PONumber not include a “-” delimiter; 
+
+4. Press Submit button 
+
+Result: The process is complete and Prompt message appeared with Error message 
+
+“No Contract number available in PONumber”
+
+
+4. Use cases related to changeing an existing file
+
+ID: NOM8
+
+Title: Changing an existing file
+
+Primary Actor: User
+
+Pre Condition: User opens a existing file
+
+Main Scenario: 
+
+1. Press the Correct button.
+
+2. User choose different name
+ 
+3. User choose diferent value 
+
+4. Corrected  file is displayed
+
+5. Press Save button
+
+Result: The changed file is displayed on the screen and saved in the system storage
+
+Alternative Scenario:
+
+2a) The name is not allowed due to containing a not recognized symbols
+3a) The entered value is not allowed due to system restrictions (amount equals 0, or is biger than 1 000 000 000, or unallowed VAT value) 
+
+Result: Prompt message displayed that correcting the file is unavailable
