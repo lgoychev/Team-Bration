@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Invoice>
+	<InvoiceNumber>INV001</InvoiceNumber>
+	<Date>2015/08/08</Date>
+	<PONumber>udrnsmr788</PONumber>
+	<Contract>US23456</Contract><TotalNet>100. 00</TotalNet>
+	<TotalVAT>20.00</TotalVAT>
+	<TotalGross>120.00</TotalGross>
+</Invoice>
