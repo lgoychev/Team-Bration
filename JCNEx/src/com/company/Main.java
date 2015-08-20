@@ -19,8 +19,8 @@ import org.w3c.dom.Node;
 
 public class Main {
     //SOURCE and OUTPUT file are locate in com.company folder, don't move
-    public static final String inputXmlFilePath = ("invoice.xml"); //define a Source name: invoice.xml (is correct); invoice_01.xml (no contract number, missing "-"); invoice_02.xml (POnumber tag not exist)
-    public static final String outputXmlFilePath = ("invoice_out.xml");
+    public static final String inputXmlFilePath = ("SOURCE.xml"); //define a Source name: SOURCE.xml (is correct); SOURCE_01.xml (no contract number, missing "-"); SOURCE_02.xml (POnumber tag not exist)
+    public static final String outputXmlFilePath = ("OUTPUT.xml");
     private static Component frame; // add to present a pop-up dialog message window
 
     public static void main(String argv[])
