@@ -19,7 +19,7 @@ import org.w3c.dom.Node;
 
 public class Main {
     //SOURCE and OUTPUT file are locate in com.company folder, don't move
-    public static final String inputXmlFilePath = ("SOURCE.xml"); //define a Source name: SOURCE.xml (is correct); SOURCE_01.xml (no contract number, missing "-"); SOURCE_02.xml (POnumber tag not exist)
+    public static final String inputXmlFilePath = ("SOURCE_02.xml"); //define a Source name: SOURCE.xml (is correct); SOURCE_01.xml (no contract number, missing "-"); SOURCE_02.xml (POnumber tag not exist)
     public static final String outputXmlFilePath = ("OUTPUT.xml");
     private static Component frame; // add to present a pop-up dialog message window
 
@@ -57,7 +57,7 @@ public class Main {
                 StreamResult streamResult = new StreamResult(new File(
                         outputXmlFilePath));
                 transformer.transform(domSource, streamResult);
-                JOptionPane.showMessageDialog(null, "The Contract number was successfully extract!", "Message",
+                JOptionPane.showMessageDialog(null, "The Contract number was successfully extracted!", "Message",
                         JOptionPane.INFORMATION_MESSAGE); //Pop-up Dialog window which present a message
             } else {
                 JOptionPane.showMessageDialog(null, "No contract number available in the PONumber!", "Source file error",
